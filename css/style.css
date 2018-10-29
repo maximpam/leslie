@@ -1,0 +1,634 @@
+@font-face {
+    font-family: 'SantEliaScript-BoldDMO';
+    src:url('../fonts/SantEliaScript-BoldDMO.ttf.woff') format('woff'),
+        url('../fonts/SantEliaScript-BoldDMO.ttf.svg#SantEliaScript-BoldDMO') format('svg'),
+        url('../fonts/SantEliaScript-BoldDMO.ttf.eot'),
+        url('../fonts/SantEliaScript-BoldDMO.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Lobster1.4';
+    src:url('../fonts/Lobster_1_4.woff') format('woff'),
+        url('../fonts/Lobster_1_4.svg') format('svg'),
+        url('../fonts/Lobster_1_4.eot') format('embedded-opentype'),
+        url('../fonts/Lobster_1_4.ttf') format('ttf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	outline: 0.5px solid white;
+}
+textarea {
+
+}
+
+button{
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+
+
+button:hover{
+	transform: scale(0.95);
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+
+.container{
+	margin: 0 auto;
+	width: 83.3%;
+}
+
+/* header */
+
+.header{
+	
+	position: relative;
+	min-height: 100vh;
+}
+
+h1 { 
+   font-family: 'SantEliaScript-BoldDMO';
+}  
+
+
+.header__logo{
+	font-size: 30px;
+  font-family: 'Lobster1.4';
+  color: rgb(233, 229, 219);
+  line-height: 1.2;
+}
+
+.header__top{
+	width: 100%;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.top__container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+	width: 83.3%;
+	margin: 0 auto;
+}
+
+.header__slider{
+	min-height: 100vh;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.header__body__item1{
+	height: 100vh;
+	width: 100%;
+	background: url('../maket-assets/bg1.png') no-repeat;
+	background-size: cover;
+	
+}	
+
+.header__body__item2{
+	height: 100vh;
+	width: 100%;
+	background: url('../maket-assets/bg1.png') no-repeat;
+	background-size: cover;
+	
+}
+
+.header__nav{
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__name{
+	font-size: 72px;
+  font-family: 'SantEliaScript-BoldDMO';
+  color: rgb(233, 229, 219);
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 auto;
+  margin-top: 250px;
+  text-align: center; 
+}
+
+.header__text{
+	font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  color: rgb(233, 229, 219);
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+	.header__nav{
+		width: 25%;
+	}
+}
+
+
+@media (max-width: 375px) {
+	.top__container{
+		flex-direction: column;
+		margin: 0 auto;
+		align-items: center;
+	}
+	
+	.header__nav{
+		width: 50%;
+	}
+
+	.header__logo{
+		font-size: 40px;
+	}
+	.header__name{
+		font-size: 50px;
+		margin-top: 200px;
+	}
+
+
+}
+
+/* second */
+
+.second{
+	width: 100%;
+	min-height: 40vh;
+	padding: 40px 0;
+}
+
+.second__img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.second__name{
+	 font-size: 24px;
+  font-family: "Lato";
+  color: rgb(60, 57, 48);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.second__text{
+  font-size: 18px;
+  font-family: "Lato";
+  color: rgb(60, 57, 48);
+  line-height: 1.333;
+  text-align: center;
+  width: 68%;
+  margin: 0 auto;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+
+@media (max-width: 768px) {
+	.second__text{
+		font-size: 20px;
+		width: 80%;
+	}
+}
+/* third */
+
+.third{
+	width: 100%;
+	height: 15vh;
+	background: url('../maket-assets/bg2.png') no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	padding: 100px 0;
+}
+
+.third__text{
+	 font-size: 30px;
+  font-family: 'SantEliaScript-BoldDMO';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  width: 52%;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+	.third__text{
+		font-size: 30px;
+		line-height: 1.4em;
+	}
+}
+
+@media (max-width: 375px){
+	.third__text{
+		font-size: 20px;
+		line-height: 1.4em;
+	}
+}
+
+/* fourth */
+
+.fourth{
+	padding-top: 50px;
+
+}
+.fourth__img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.fourth__name{
+	font-size: 24px;
+  font-family: "Lato";
+  color: rgb(60, 57, 48);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.small_img_gallery{
+  width: 24%;
+  height: 200px;
+  display: inline-block;
+  background: url('../maket-assets/galery_item1.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.social__block{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 5%;
+	flex-direction: column;
+	flex-basis: 100%;
+	height: 80%;
+}
+
+.small_img_gallery:hover .social__block{
+	display: flex;
+	justify-content: space-between;
+}
+
+.big_img_gallery:hover .social__block{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.social__item{
+	width: 30%;
+}
+
+.social__item1{
+	width: 25%;
+}
+
+.block__text{
+	font-size: 14px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+}
+
+
+.gallery__firstrow{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.gallery__secondrow{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.big_img_gallery{
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  background: url('../maket-assets/large.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.gallery__thirdrow{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery__navigation{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation__text{
+	 font-size: 18px;
+  font-family: "Lato";
+  color: rgb(97, 96, 95);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.left__button{
+	display: flex;
+	align-items: center;
+	width: 19%;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+
+.right__button{
+	display: flex;
+	align-items: center;
+	width: 15%;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.fourth__galery{
+	margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+	.small_img_gallery{
+		height: 150px;
+	}
+
+	.big_img_gallery{
+		height: 150px;
+	}
+
+	.nav__arrows{
+		display: none;
+	}
+
+	.gallery__firstrow{
+		margin-bottom: 5px;
+	}
+
+	.gallery__secondrow{
+		margin-bottom: 5px;
+	}
+}
+
+@media (max-width: 375px){
+	.small_img_gallery{
+		height: 70px;
+	}
+
+	.big_img_gallery{
+		height: 70px;
+	}
+	.small_img_gallery:hover .social__block{
+	display: none;
+}
+
+.big_img_gallery:hover .social__block{
+	display: none;
+}
+
+}
+
+/* fifth */
+
+
+.fifth{
+	padding-top: 50px;
+
+}
+.fifth__img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.fifth__name{
+	font-size: 24px;
+  font-family: "Lato";
+  color: rgb(60, 57, 48);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.fifth__links{
+	width: 35%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+#map {
+        height: 50vh;
+ }
+
+
+ @media (max-width: 768px) {
+	#map {
+        height: 30vh;
+ }
+}
+
+ /* footer */
+
+ .footer{
+ 	min-height: 100vh;
+ 	background: linear-gradient(rgba(31, 29, 27, 0.8), rgba(63, 61, 53, 0.2));
+ 	background-image: url('../maket-assets/bg3.png');
+ 	background-repeat: no-repeat;
+ 	-webkit-background-size: cover;
+ 	background-size: cover;
+ 	padding-top: 50px;
+ }
+
+ .footer__name{
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	font-size: 24px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  margin-bottom: 55px;
+ }
+
+ .footer__form{
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	flex-wrap: wrap;
+ 	margin-bottom: 50px;
+ }
+
+ .form__name{
+ 	width: 45%;
+
+	background: rgba(162, 158, 158, 0.8);
+	border: none;
+	margin-bottom: 50px;
+	padding: 15px;
+ }
+
+ .form__email{
+ 	width: 45%;
+	background: rgba(162, 158, 158, 0.8);
+	border: none;
+	margin-bottom: 50px;
+	padding: 15px;
+ }
+
+ .form__message{
+ 	width: 100%;
+	background: rgba(162, 158, 158, 0.8);
+	border: none;
+	padding: 15px;
+ }
+
+ ::placeholder{
+	font-size: 16px;
+  font-family: "Lato";
+  color: rgb(60, 57, 48);
+  text-transform: uppercase;
+  line-height: 1.2;
+	
+ }
+
+.form__button{
+	  font-size: 24px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  background: none;
+  border: 2px solid white;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px 0;
+    letter-spacing: 0.2em;
+}
+
+
+.footer__copyright{
+	font-size: 14px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  border-top: 0.5px solid white;
+  width: 67%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.075em;
+  padding-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+	.footer {
+        min-height: 55vh;
+ }
+}
+
+
+@media (max-width: 375px){
+	.form__name{
+		width: 100%;
+
+	}
+	.form__email{
+		width: 100%;
+	}
+}
+
